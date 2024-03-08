@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "immo-front",
+    "slug": "immo-front",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/favicon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/sp.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iyyappan031.immo-front"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/favicon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "package": "com.iyyappan031.immofront",
+      "versionCode": 12
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Show current location on map."
+        }
+      ],
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiYXJrMjc4NCIsImEiOiJjbGk3bG1hZ3Mxb3lpM2pycnk0eW8zY2Z1In0.HLKaCXYNNKqgXFqjdynVgw"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "091553d0-9cf3-49e2-97e0-c44ab731de63"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/091553d0-9cf3-49e2-97e0-c44ab731de63"
+    }
+  }
+}
